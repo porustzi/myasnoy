@@ -217,7 +217,7 @@ export default function Menu({ navigate }: MenuProps) {
   return (
     <div>
       {/* Hero */}
-      <div className="relative h-64 sm:h-80 flex items-center justify-center overflow-hidden">
+      <div className="relative h-64 pt-14 sm:h-80 sm:pt-0 flex items-center justify-center overflow-hidden">
         <Img
           src="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Меню"
@@ -235,7 +235,7 @@ export default function Menu({ navigate }: MenuProps) {
       </div>
 
       {/* Category tabs */}
-      <div className="bg-white sticky top-[72px] z-40 shadow-sm border-b border-[#E8D8C4]">
+      <div className="bg-white sticky top-14 sm:top-[72px] z-40 shadow-sm border-b border-[#E8D8C4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-1 overflow-x-auto py-3 scrollbar-hide no-scrollbar">
             {categories.map(cat => (

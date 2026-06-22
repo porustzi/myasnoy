@@ -185,7 +185,7 @@ export default function Home({ navigate }: HomeProps) {
             </button>
           </div>
 
-          <div className="mt-16 flex items-center justify-center gap-8 animate-fade-in-up animate-delay-400">
+          <div className="mt-16 flex items-center justify-center gap-8 hero-stats animate-fade-in-up animate-delay-400">
             {[
               { value: '10+', label: 'Років досвіду' },
               { value: '50k+', label: 'Щасливих гостей' },
@@ -379,7 +379,7 @@ export default function Home({ navigate }: HomeProps) {
                 <Img
                   src={img.url}
                   alt={img.alt}
-                  className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${i === 0 ? 'h-full min-h-[320px]' : 'h-full'}`}
+                  className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${i === 0 ? 'h-full min-h-[220px] sm:min-h-[320px] gallery-first' : 'h-full'}`}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl" />
               </div>

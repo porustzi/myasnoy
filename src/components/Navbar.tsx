@@ -29,8 +29,7 @@ export default function Navbar({ currentPage, navigate }: NavbarProps) {
     setMobileOpen(false);
   };
 
-  const isHome = currentPage === 'home';
-  const transparent = isHome && !scrolled;
+  const transparent = !scrolled;
 
   return (
     <header

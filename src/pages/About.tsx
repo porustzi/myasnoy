@@ -65,7 +65,7 @@ export default function About({ navigate }: AboutProps) {
   return (
     <div>
       {/* Hero */}
-      <div className="relative h-72 sm:h-96 flex items-center justify-center overflow-hidden">
+      <div className="relative h-72 pt-14 sm:h-96 sm:pt-0 flex items-center justify-center overflow-hidden">
         <Img
           src="https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Про нас"

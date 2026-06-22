@@ -18,7 +18,7 @@ export default function Contact({ navigate }: ContactProps) {
   return (
     <div>
       {/* Hero */}
-      <div className="relative h-64 sm:h-80 flex items-center justify-center overflow-hidden">
+      <div className="relative h-64 pt-14 sm:h-80 sm:pt-0 flex items-center justify-center overflow-hidden">
         <Img
           src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Контакти"
