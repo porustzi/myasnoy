@@ -1,5 +1,6 @@
 import { Phone, MapPin, Clock, Instagram, Flame, Mail } from 'lucide-react';
 import ReservationForm from '../components/ReservationForm';
+import Img from '../components/Img';
 import Footer from '../components/Footer';
 import type { Page } from '../App';
 
@@ -18,7 +19,7 @@ export default function Contact({ navigate }: ContactProps) {
     <div>
       {/* Hero */}
       <div className="relative h-64 sm:h-80 flex items-center justify-center overflow-hidden">
-        <img
+        <Img
           src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Контакти"
           className="absolute inset-0 w-full h-full object-cover"

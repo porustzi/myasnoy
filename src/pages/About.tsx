@@ -1,4 +1,5 @@
 import { Flame, Heart, Award, Users, Leaf, ChefHat } from 'lucide-react';
+import Img from '../components/Img';
 import Footer from '../components/Footer';
 import type { Page } from '../App';
 
@@ -65,7 +66,7 @@ export default function About({ navigate }: AboutProps) {
     <div>
       {/* Hero */}
       <div className="relative h-72 sm:h-96 flex items-center justify-center overflow-hidden">
-        <img
+        <Img
           src="https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Про нас"
           className="absolute inset-0 w-full h-full object-cover"
@@ -88,13 +89,13 @@ export default function About({ navigate }: AboutProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <img
+              <Img
                 src="https://images.pexels.com/photos/1028427/pexels-photo-1028427.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Мангал"
                 className="w-full h-[480px] object-cover rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -right-6 w-52 h-40 rounded-xl overflow-hidden shadow-xl border-4 border-white hidden md:block">
-                <img
+                <Img
                   src="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Вогонь"
                   className="w-full h-full object-cover"
@@ -156,7 +157,7 @@ export default function About({ navigate }: AboutProps) {
       {/* Team */}
       <section className="py-20 md:py-28 bg-[#2C1810] relative overflow-hidden">
         <div className="absolute inset-0 opacity-8">
-          <img
+          <Img
             src="https://images.pexels.com/photos/1028427/pexels-photo-1028427.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt=""
             className="w-full h-full object-cover"
@@ -173,7 +174,7 @@ export default function About({ navigate }: AboutProps) {
             {team.map(member => (
               <div key={member.name} className="text-center group">
                 <div className="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#E8863A]/40 group-hover:border-[#E8863A] transition-all duration-300 shadow-xl">
-                  <img
+                  <Img
                     src={member.img}
                     alt={member.name}
                     className="w-full h-full object-cover"

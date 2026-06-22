@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Flame, ChevronDown, Star, CheckCircle2, Award, Users, Beef, Leaf } from 'lucide-react';
 import type { Page } from '../App';
 import ReservationForm from '../components/ReservationForm';
+import Img from '../components/Img';
 import Footer from '../components/Footer';
 
 interface HomeProps {
@@ -142,7 +143,7 @@ export default function Home({ navigate }: HomeProps) {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
+          <Img
             src="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Гриль та вогонь"
             className="w-full h-full object-cover object-center"
@@ -212,13 +213,13 @@ export default function Home({ navigate }: HomeProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className={`transition-all duration-700 ${aboutSection.inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
               <div className="relative">
-                <img
+                <Img
                   src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Ресторан Мясний Роджер"
                   className="w-full h-80 lg:h-[520px] object-cover rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -right-6 w-48 h-36 rounded-xl overflow-hidden shadow-xl border-4 border-white hidden sm:block">
-                  <img
+                  <Img
                     src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg?auto=compress&cs=tinysrgb&w=400"
                     alt="Мангал"
                     className="w-full h-full object-cover"
@@ -281,7 +282,7 @@ export default function Home({ navigate }: HomeProps) {
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
                 <div className="relative overflow-hidden h-48">
-                  <img
+                  <Img
                     src={dish.img}
                     alt={dish.name}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
@@ -325,7 +326,7 @@ export default function Home({ navigate }: HomeProps) {
         className="py-20 md:py-28 bg-[#2C1810] relative overflow-hidden"
       >
         <div className="absolute inset-0 opacity-10">
-          <img
+          <Img
             src="https://images.pexels.com/photos/1028427/pexels-photo-1028427.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt=""
             className="w-full h-full object-cover"
@@ -375,7 +376,7 @@ export default function Home({ navigate }: HomeProps) {
                 className={`relative overflow-hidden rounded-xl group transition-all duration-700 ${i === 0 ? 'row-span-2' : ''} ${gallerySection.inView ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
                 style={{ transitionDelay: `${i * 80}ms`, aspectRatio: i === 0 ? undefined : '4/3' }}
               >
-                <img
+                <Img
                   src={img.url}
                   alt={img.alt}
                   className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${i === 0 ? 'h-full min-h-[320px]' : 'h-full'}`}

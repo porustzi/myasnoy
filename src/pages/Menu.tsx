@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Flame } from 'lucide-react';
+import Img from '../components/Img';
 import Footer from '../components/Footer';
 import type { Page } from '../App';
 
@@ -217,7 +218,7 @@ export default function Menu({ navigate }: MenuProps) {
     <div>
       {/* Hero */}
       <div className="relative h-64 sm:h-80 flex items-center justify-center overflow-hidden">
-        <img
+        <Img
           src="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Меню"
           className="absolute inset-0 w-full h-full object-cover"
@@ -265,7 +266,7 @@ export default function Menu({ navigate }: MenuProps) {
               style={{ animationDelay: `${i * 50}ms` }}
             >
               <div className="relative overflow-hidden h-48">
-                <img
+                <Img
                   src={item.img}
                   alt={item.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108"

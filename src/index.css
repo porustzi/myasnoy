@@ -5,15 +5,15 @@
 @tailwind utilities;
 
 :root {
-  --brown-dark: #2C1810;
-  --brown-mid: #4A2C17;
-  --brown-light: #8B5E3C;
-  --orange: #D4681E;
-  --orange-light: #E8863A;
-  --beige: #F5E6D0;
-  --beige-light: #FBF5EC;
-  --charcoal: #2A2A2A;
-  --stone: #9B9589;
+  --brown-dark: #1a0f0a;
+  --brown-mid: #3a2012;
+  --brown-light: #7a4d2e;
+  --orange: #b8521a;
+  --orange-light: #d46a28;
+  --beige: #e8d5bc;
+  --beige-light: #f0e4d3;
+  --charcoal: #1e1a18;
+  --stone: #8a7e72;
 }
 
 * {
